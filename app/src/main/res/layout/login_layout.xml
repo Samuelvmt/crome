@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7D6EBA"
+    android:background="@drawable/background"
     android:orientation="vertical"
     tools:context=".Login_Activity">
 
@@ -15,55 +15,75 @@
         android:layout_margin="10dp"
         android:orientation="vertical">
 
+      <RelativeLayout
+          android:layout_width="390dp"
+          android:layout_height="50dp">
+        <ImageButton
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/arrow"
+            android:id="@+id/setinha"
+            />
+        <TextView
+            android:textSize="20dp"
+            android:textAlignment="textEnd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:id="@+id/login"/>
+    </RelativeLayout>
+
         <ImageView
             android:layout_width="200dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
             android:layout_margin="30dp"
-            android:src="@drawable/logos" />
-<layout
+            android:src="@drawable/logos"
+            />
+
 
 
         <EditText
+            android:layout_marginTop="80dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="20dp"
+            android:paddingTop="100dp"
             android:drawableStart="@drawable/person2"
             android:hint="Username"
             android:inputType="textPersonName"
             android:maxLenght="50" android:maxLength="50" />
 
         <EditText
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_margin="20dp"
             android:drawableStart="@drawable/baseline_lock"
             android:hint="Password"
             android:inputType="textPersonName"
             android:maxLenght="50"
-            android:maxLength="50" />
+             />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:text="Cadastrar-se   " />
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="117dp"
+            android:layout_height="90dp"
             android:orientation="horizontal">
 
             <Button
-                android:layout_width="141dp"
-                android:layout_height="105dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_margin="60dp"
-                android:layout_marginHorizontal="20dp"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
                 android:layout_weight="1"
                 android:padding="15dp"
-                android:paddingHorizontal="500dp"
-                android:text="entrar" />
+                android:text="entrar"
+                android:textColor="#FFFFFF"
+                android:layout_marginHorizontal="40dp"
+                />
 
 
         </LinearLayout>
@@ -71,7 +91,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="-60dp"
+
             android:text="Don't have an accont? Sign up" />
     </LinearLayout>
 </LinearLayout>
