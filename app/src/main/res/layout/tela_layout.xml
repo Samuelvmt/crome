@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/bkblue"
     android:orientation="vertical"
     tools:context=".Login_Activity">
 
@@ -15,41 +15,21 @@
         android:layout_margin="10dp"
         android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="390dp"
-            android:layout_height="50dp">
 
-            <ImageButton
-
-                android:id="@+id/setinha2"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/arrow"
-                android:backgroundTint="@color/white" />
-
-            <TextView
-                android:id="@+id/signup"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:text="sign up"
-                android:textAlignment="textEnd"
-                android:textColor="#ffffff"
-                android:textSize="20dp" />
-        </RelativeLayout>
 
         <ImageView
             android:layout_width="130dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:src="@drawable/photocamera" />
+            android:src="@drawable/logoicon"
+            android:layout_marginTop="30dp"/>
 
 
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:drawableStart="@drawable/person2"
+            android:drawableEnd="@drawable/person2"
             android:hint="Username"
             android:inputType="textPersonName"
             android:maxLenght="50"
@@ -62,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:drawableStart="@drawable/baseline_email"
+            android:drawableEnd="@drawable/baseline_email"
             android:hint="Email"
             android:inputType="textPersonName"
             android:maxLenght="50"
@@ -74,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:drawableStart="@drawable/baseline_lock"
+            android:drawableEnd="@drawable/baseline_lock"
             android:hint="Password"
             android:inputType="textPersonName"
             android:maxLenght="50"
@@ -86,8 +66,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:drawableStart="@drawable/gift_present"
-            android:hint="Birthday"
+            android:drawableEnd="@drawable/baseline_lock"
+            android:hint="Password"
             android:inputType="textPersonName"
             android:maxLenght="50"
             android:textColorHint="#ffffff" />

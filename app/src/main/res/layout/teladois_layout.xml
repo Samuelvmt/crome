@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="@drawable/bkblue"
     android:orientation="vertical"
     tools:context=".Login_Activity">
 
@@ -15,64 +15,39 @@
         android:layout_margin="10dp"
         android:orientation="vertical">
 
-      <RelativeLayout
-          android:layout_width="390dp"
-          android:layout_height="50dp">
-        <ImageButton
-
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/arrow"
-            android:id="@+id/setinha"
-            android:layout_marginTop="10dp"
-
-            />
-        <TextView
-            android:textSize="20dp"
-            android:textAlignment="textEnd"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:text="Login"
-            android:textColor="#ffffff"
-            android:id="@+id/login"/>
-    </RelativeLayout>
 
         <ImageView
             android:layout_width="200dp"
             android:layout_height="150dp"
             android:layout_gravity="center"
-            android:layout_margin="30dp"
-            android:src="@drawable/logos"
-            />
-
+            android:layout_margin="60dp"
+            android:src="@drawable/logoicon"/>
 
 
         <EditText
-            android:layout_marginTop="80dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:paddingTop="100dp"
-            android:drawableStart="@drawable/person2"
+            android:layout_marginTop="50dp"
+            android:drawableEnd="@drawable/person2"
             android:hint="Username"
             android:inputType="textPersonName"
-            android:maxLenght="50" android:maxLength="50"
-            android:textColorHint="#ffffff"
-            />
+            android:maxLenght="50"
+            android:maxLength="50"
+            android:paddingTop="50dp"
+            android:textColorHint="#ffffff" />
 
         <EditText
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:drawableStart="@drawable/baseline_lock"
+            android:drawableEnd="@drawable/baseline_lock"
+
             android:hint="Password"
             android:inputType="textPersonName"
             android:maxLenght="50"
-            android:textColorHint="#ffffff"
-            android:drawableEnd="@drawable/question"
-            />
-
+            android:textColorHint="#ffffff" />
 
 
         <LinearLayout
@@ -83,21 +58,23 @@
             <Button
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_marginHorizontal="40dp"
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
+                android:background="#000000"
                 android:text="sign in"
-                android:textColor="#FFFFFF"
-                android:layout_marginHorizontal="40dp"
                 />
 
 
         </LinearLayout>
+
         <TextView
+            android:layout_marginTop="25dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="#ffffff"
-            android:text="Don't have an accont? Sign up"
-            android:layout_marginBottom="10dp"/>
+            android:layout_marginBottom="10dp"
+            android:text="Don't have an accont? Create new."
+            android:textColor="#ffffff" />
     </LinearLayout>
 </LinearLayout>
